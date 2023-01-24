@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "02a8ddfa-4ddc-4353-b7df-61f331fde615",
+		"name": "Person",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25359296"
+	},
+	"item": [
+		{
+			"name": "addPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":3,\n    \"firstName\": \"chemistry\",\n    \"lastName\": \"book\",\n    \"age\": 30,\n    \"dob\": \"jjee\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addPerson?id=1&firstName=jlkasjdf&lastName=sdfasfd&age=12&dob=123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addPerson"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "firstName",
+							"value": "jlkasjdf"
+						},
+						{
+							"key": "lastName",
+							"value": "sdfasfd"
+						},
+						{
+							"key": "age",
+							"value": "12"
+						},
+						{
+							"key": "dob",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallpersons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persons",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePersonByid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deletePerson?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deletePerson"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/person?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePerson",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":3,\n    \"firstName\": \"adsfsda\",\n    \"lastName\": \"asdfasdf\",\n    \"age\": 30,\n    \"dob\": \"jjee\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updatePerson?id=2&firstName=jlkasjdf&lastName=sdfasfd&age=12&dob=asdf",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updatePerson"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "firstName",
+							"value": "jlkasjdf"
+						},
+						{
+							"key": "lastName",
+							"value": "sdfasfd"
+						},
+						{
+							"key": "age",
+							"value": "12"
+						},
+						{
+							"key": "dob",
+							"value": "asdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":3,\n    \"firstName\": \"chemistry\",\n    \"lastName\": \"book\",\n    \"age\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updatePerson",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updatePerson"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
